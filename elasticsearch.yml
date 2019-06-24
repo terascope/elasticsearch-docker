@@ -1,8 +1,10 @@
 network.host: 0.0.0.0
-http.port: 49200
-transport.tcp.port: 49300
-discovery.type: single-node
-discovery.zen.minimum_master_nodes: 1
+transport.host: 0.0.0.0
+discovery.type: 'single-node'
 node.master: true
 node.ingest: true
 node.data: true
+bootstrap.memory_lock: true
+xpack.security.enabled: false
+xpack.ml.enabled: false
+xpack.watcher.enabled: false

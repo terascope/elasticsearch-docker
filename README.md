@@ -6,8 +6,7 @@
 
 ```sh
 docker run --rm terascope/elasticsearch
-# To avoid port collisions, we use 49200 instead of 9200
-curl 'localhost:49300/_cat/health'
+curl 'localhost:9200/_cat/health'
 ```
 
 ## Build and Push
