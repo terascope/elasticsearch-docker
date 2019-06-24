@@ -10,6 +10,9 @@ docker run --rm terascope/elasticsearch
 curl 'localhost:49300/_cat/health'
 ```
 
-## Building
+## Build and Push
 
-Any push to this repo will build the latest image
+```sh
+docker build -t terascope/elasticsearch .
+docker push terascope/elasticsearch
+```
